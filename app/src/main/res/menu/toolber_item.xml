@@ -7,11 +7,13 @@
         android:title="@string/share"
         android:icon="@drawable/share"
         app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
         />
     <item
-        android:id="Search"
+        android:id="@+id/search"
         android:title="Search"
         android:icon="@drawable/search"
         app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
         />
 </menu>

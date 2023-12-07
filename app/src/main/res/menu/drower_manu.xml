@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupOne"
+        >
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/blue"
+            />
+        <item
+            android:id="@+id/video"
+            android:title="Video"
+            android:icon="@drawable/video"
+            android:iconTint="@color/blue"
+            />
+    </group>
+    <group
+        android:id="@+id/setting">
+        <item
+            android:id="@+id/set"
+            android:title="Setting"
+            android:icon="@drawable/setting"
+            android:iconTint="@color/blue"
+            />
+
+
+    </group>
+
+</menu>
