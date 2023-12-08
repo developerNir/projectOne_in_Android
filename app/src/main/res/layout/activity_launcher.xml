@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".LauncherActivity"
     tools:openDrawer="start"
+    android:id="@+id/DrawerLayout"
     >
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -23,10 +24,12 @@
                 app:titleMarginStart="20dp"
                 app:navigationIcon="@drawable/manu"
                 app:menu="@menu/toolber_item"
+                android:id="@+id/MataToollber"
                 />
 
         </com.google.android.material.appbar.AppBarLayout>
         <FrameLayout
+            android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="?attr/actionBarSize"
@@ -41,6 +44,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drower_manu"
+        android:id="@+id/navigationView"
         />
 
 </androidx.drawerlayout.widget.DrawerLayout>

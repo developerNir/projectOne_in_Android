@@ -9,12 +9,21 @@
             android:title="Home"
             android:icon="@drawable/home"
             android:iconTint="@color/blue"
+            android:checkable="true"
             />
         <item
             android:id="@+id/video"
             android:title="Video"
             android:icon="@drawable/video"
             android:iconTint="@color/blue"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/ToDo"
+            android:title="ToDo"
+            android:icon="@drawable/todo"
+            android:iconTint="@color/blue"
+            android:checkable="true"
             />
     </group>
     <group
@@ -24,6 +33,7 @@
             android:title="Setting"
             android:icon="@drawable/setting"
             android:iconTint="@color/blue"
+            android:checkable="true"
             />
 
 
