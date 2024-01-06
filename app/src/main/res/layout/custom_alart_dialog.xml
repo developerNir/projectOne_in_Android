@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:circularflow_defaultRadius="@dimen/cardview_default_radius"
+
+    >
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="#4CAF50"
+        android:src="@drawable/login"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Header"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:textColor="#4CAF50"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Text"
+        android:id="@+id/header_title"
+        android:pointerIcon="text"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:background="#7C4CAF50"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:padding="3dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="#34B339"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:pointerIcon="text"
+        android:hint="description"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:background="#7C4CAF50"
+        android:id="@+id/description"
+        />
+    <Button
+        android:id="@+id/buttonDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:textSize="20sp"
+        android:backgroundTint="#29A12E"
+        android:layout_margin="20dp"
+        />
+
+    
+
+</LinearLayout>

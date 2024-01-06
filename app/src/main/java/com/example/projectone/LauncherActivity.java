@@ -58,6 +58,11 @@ public class LauncherActivity extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(toggle);
 
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.frameLayout, new home_fragment());
+        fragmentTransaction.commit();
+
         // ToolBar Property ---------------------------------
         materialToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -85,6 +90,11 @@ public class LauncherActivity extends AppCompatActivity {
                     fragmentTransaction.add(R.id.frameLayout, new home_fragment());
                     fragmentTransaction.commit();
                     drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.video) {
+                    startActivity(new Intent(LauncherActivity.this, MainActivity2.class));
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.setting) {
+                    startActivity(new Intent(LauncherActivity.this,viewTodoActivity.class));
                 }
                 return true;
             }
